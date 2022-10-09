@@ -1,0 +1,77 @@
+.info_container {
+  max-width: 1440px;
+  min-width: 1200px;
+  width: 100%;
+  background-color: #332a28;
+  .info_content {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0 20px;
+    display: flex;
+    .content_left {
+      width: 20%;
+      color: #cab69e;
+      text-align: start;
+      .left_pic {
+        margin: 0px auto 10px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: bottom left;
+        }
+      }
+      .ct_name {
+        font-size: 30px;
+      }
+      .en_name {
+        font-size: 24px;
+        padding-bottom: 10px;
+      }
+      .looking_job {
+        font-size: 20px;
+        padding: 2px 0;
+      }
+      .en_looking_job {
+        padding: 2px 0;
+        font-size: 12px;
+      }
+    }
+    .content_right {
+      width: 80%;
+      padding-left: 40px;
+      text-align: start;
+      color: #cab69e;
+      .introduction {
+        padding-bottom: 20px;
+      }
+      .link_media {
+        padding-top: 20px;
+        .github_icon {
+          width: 60px;
+          a {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .small {
+          height: 20px;
+          display: flex;
+          margin: 5px 0;
+          span {
+            padding-right: 10px;
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
