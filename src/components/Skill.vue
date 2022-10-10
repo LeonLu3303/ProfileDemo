@@ -1,30 +1,84 @@
 <template>
   <div class="skill_container">
-    <h2>工作經歷</h2>
-    <h3>{{}}</h3>
+    <h2>技能 <span>Skill</span></h2>
+    <div class="skill_content">
+      <div class="skill_icon_container">
+        <div class="icon_pic" v-for="item in skillIcon" :key="item">
+          <img :src="require(`@/assets/img/skill_icon/${item}.png`)" alt="" />
+        </div>
+      </div>
+      <div class="skill_detail_container">
+        <div
+          class="skill_detail_content"
+          v-for="item in skillDetail"
+          :key="item"
+        >
+          <div class="skill_title">{{ item.skillName }}</div>
+          <hr />
+          <ul>
+            <li v-for="item in item.skill" :key="item">
+              {{ item }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      job: [
+      skillIcon: [
+        // 要存放.png檔案名稱
+        'html5',
+        'css3',
+        'javascript',
+        'jquery',
+        'sass',
+        'gsap',
+        'mysql',
+        'php',
+        'git',
+        'workbench',
+        'figma',
+        'vuejs',
+        'bootstrap',
+        'java',
+        'autocad',
+      ],
+      skillDetail: [
         {
-          company: '京元塑膠有限公司',
-          position: '開發工程師',
-          workTime: '2018/07-2021/02',
-          mainWork: [
-            '與國外廠商洽談、驗收原料資源',
-            '與客戶討論產品原料可行性及價格',
-            '協助客戶開發試作產品',
-            '廠內原料開發試作',
+          skillName: '前端',
+          skill: [
+            'HTML5',
+            'CSS3',
+            'JavaScript',
+            'JQuery',
+            'SASS',
+            'GSAP',
+            'Vue.js',
+            'Bootstrap',
+            'RWD',
+            'Web APIs',
+            'gulp',
+            'Webpack',
           ],
         },
         {
-          company: '江申工業股份有限公司',
-          position: '開發工程師',
-          workTime: '2016/08-2018/06',
-          mainWork: ['', '', '', '', '', ''],
+          skillName: '後端與資料庫',
+          skill: [
+            'PHP程式設計',
+            'My SQL資料庫',
+            'Git 版本控制',
+            '系統分析(敏捷式開發)',
+            'MongoDB',
+            'RESTful API',
+          ],
+        },
+        {
+          skillName: '其他',
+          skill: ['AutoCAD', 'ProE', 'Java'],
         },
       ],
     };

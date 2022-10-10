@@ -1,0 +1,55 @@
+.experience_container {
+  color: #332a28;
+  max-width: 1440px;
+  min-width: 1200px;
+  width: 100%;
+  margin: auto;
+  text-align: start;
+  padding: 40px 0px;
+  h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #646542;
+    span {
+      font-size: 30px;
+    }
+  }
+  .job_content {
+    width: 80%;
+    margin: auto;
+    .job_experience {
+      padding: 20px 0px;
+      .job_position {
+        font-size: 24px;
+        font-weight: 600;
+        span {
+          color: #949665;
+        }
+      }
+      .job_time {
+        color: #757474;
+        font-size: 20px;
+        padding: 20px 0;
+      }
+      .main_work {
+        padding-left: 20px;
+        h3 {
+          padding-bottom: 20px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+        ul {
+          padding-left: 20px;
+          li {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px 0px;
+          }
+        }
+      }
+    }
+  }
+}

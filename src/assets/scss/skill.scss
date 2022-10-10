@@ -1,14 +1,60 @@
 .skill_container {
   color: #332a28;
-  padding-left: 10%;
-  padding-right: 10%;
   max-width: 1440px;
   min-width: 1200px;
   width: 100%;
   margin: auto;
   text-align: start;
+  padding: 40px 0px;
   h2 {
+    width: 80%;
+    margin: auto;
     font-size: 40px;
-    padding: 40px 0px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #646542;
+    span {
+      font-size: 30px;
+    }
+  }
+  .skill_content {
+    width: 80%;
+    margin: auto;
+    .skill_icon_container {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      .icon_pic {
+        padding: 10px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .skill_detail_container {
+      width: 100%;
+      display: flex;
+      .skill_detail_content {
+        width: 33.333333%;
+        padding: 40px 20px 0px;
+        .skill_title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        hr {
+          margin: 5px 0;
+        }
+        ul {
+          padding: 10px 30px;
+          li {
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
   }
 }

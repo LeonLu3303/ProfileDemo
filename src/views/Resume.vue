@@ -2,17 +2,19 @@
   <section class="resume">
     <BasicInfo />
     <Skill />
+    <Experience />
   </section>
 </template>
 <script>
 import BasicInfo from '@/components/BasicInfo.vue';
+import Experience from '@/components/Experience.vue';
 import Skill from '@/components/Skill.vue';
 
 export default {
   data() {
     return {};
   },
-  components: { BasicInfo, Skill },
+  components: { BasicInfo, Experience, Skill },
   methods: {},
   created() {},
   mounted() {},
