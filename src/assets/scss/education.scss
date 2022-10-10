@@ -1,0 +1,47 @@
+.education_container {
+  color: #332a28;
+  max-width: 1440px;
+  min-width: 1200px;
+  width: 100%;
+  margin: auto;
+  text-align: start;
+  padding: 40px 0px;
+  h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #646542;
+    span {
+      font-size: 30px;
+    }
+  }
+  .ed_content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .content_detail {
+      width: 50%;
+      .content_card {
+        margin: 0 20px;
+        padding: 20px;
+        .ed_name {
+          font-size: 28px;
+          font-weight: 600;
+        }
+        .ed_time {
+          padding: 10px 0px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #878787;
+        }
+        .ed_maior {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

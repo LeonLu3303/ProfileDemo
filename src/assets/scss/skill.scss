@@ -37,6 +37,7 @@
     .skill_detail_container {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       .skill_detail_content {
         width: 33.333333%;
         padding: 40px 20px 0px;
